@@ -6,68 +6,61 @@
 body {
     background-color: black;
     color: white;
-    padding: 20px 40px;
-}
-/* 헤더 */
-.header img{
-    width: 200px;
-}
-
-/* 메인화면 */
-.main {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.main .mainBox {
-    width: 450px;
-    height: 600px;
-    margin-top: 20px;
-    background-color: darkgray;
-    padding: 60px;
-}
-.main .mainBox h2 {
-    font-size: 30px;
-    font-weight: lighter;
-    margin-bottom: 30px;
-}
-.main .mainBox .loginBox .informBox{
-    display: flex;
-    flex-direction: column;
-}
-.main .mainBox .loginBox .informBox input, button {
-    width: 330px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-}
-.main .mainBox .loginBox .informBox input {
-    margin-bottom: 15px;
-    padding: 0 20px;
-}
-.main .mainBox .loginBox .informBtn input[type=checkbox]{
-    accent-color: pink;
-}
-.main .mainBox .loginBox .informBox button {
-    background-color: palevioletred;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: white;
-    font-size: 18px;
-}
-.main .mainBox .loginBox .informBox button:hover {
-    background-color: rgb(170, 89, 116);
-}
-.main .mainBox .loginBox .informBtn {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
 }
 
-.main .mainBox .loginTxt {
-    margin-top: 50px;
+.mainBox {
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.main .mainBox .loginTxt .otherP {
-    font-size: 13px;
+.mainBox .header h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+.mainBox .profile {
+    display: flex;
+    width: 900px;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.mainBox .profile .proBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainBox .profile .proBox p {
+    font-size: 18px;
     margin-top: 10px;
+}
+.mainBox .profile .proBox img {
+    width: 150px;
+    border-radius: 5px;
+}
+.mainBox .profile .proBox img:hover {
+    border: 3px solid white;
+}
+.mainBox .profile .proBox p {
+    color: gray;
+}
+.mainBox .proBtn {
+    display: flex;
+    justify-content: center;
+}
+.mainBox .proBtn button {
+    background-color: black;
+    color: gray;
+    border: 1px solid gray;
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+}
+.mainBox .proBtn button:hover {
+    color: pink;
+    border: 1px solid pink;
 }
