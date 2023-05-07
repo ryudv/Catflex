@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+/* 헤더 */
+.header img{
+    width: 200px;
+}
+
+/* 메인화면 */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .mainBox {
+    width: 450px;
+    height: 600px;
+    margin-top: 20px;
+    background-color: darkgray;
+    padding: 60px;
+}
+.main .mainBox h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+.main .mainBox .loginBox .informBox{
+    display: flex;
+    flex-direction: column;
+}
+.main .mainBox .loginBox .informBox input, button {
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+.main .mainBox .loginBox .informBox input {
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+.main .mainBox .loginBox .informBtn input[type=checkbox]{
+    accent-color: pink;
+}
+.main .mainBox .loginBox .informBox button {
+    background-color: palevioletred;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+}
+.main .mainBox .loginBox .informBox button:hover {
+    background-color: rgb(170, 89, 116);
+}
+.main .mainBox .loginBox .informBtn {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.main .mainBox .loginTxt {
+    margin-top: 50px;
+}
+.main .mainBox .loginTxt .otherP {
+    font-size: 13px;
+    margin-top: 10px;
+}
