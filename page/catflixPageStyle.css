@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    padding: 0 50px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 헤더 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    transition: .7s;
+}
+.header:hover {
+    background-color: black;
+}
+/* 로고 */
+.header .headerLogo {
+    display: flex;
+    align-items: center;
+}
+.header .headerLogo .logoImg {
+    margin-right: 50px;
+}
+.header .headerLogo .logoImg img {
+    width: 90px;
+}
+.header .headerLogo .logoTitle span{
+    font-size: 14px;
+    transition: .5s;
+    margin-left: 15px;
+}
+.header .headerLogo .logoTitle span:hover {
+    color: gray;
+}
+/* 버튼 */
+.header .headerBtn {
+    display: flex;
+    align-items: center;
+}
+.header .headerBtn span {
+    font-size: 22px;
+    margin-right: 30px;
+}
+.header .headerBtn .profileImg {
+    display: flex;
+    align-items: center;
+}
+.header .headerBtn .profileImg img {
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* 메인화면 */
+.main {
+    padding: 30px 0;
+}
+.main .videoLogo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.main .videoLogo img{
+    width: 20px;
+    margin-right: 15px;
+}
+.main .videoLogo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .videoTitle img {
+    width: 600px;
+    margin-bottom: 20px;
+}
+.main .videoRank {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main .videoRank img {
+    width: 35px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.main .videoRank span {
+    font-size: 23px;
+}
+.main .videoInfo {
+    width: 550px;
+    margin-bottom: 20px;
+}
+.main .videoInfo p{
+    font-size: 18px;
+}
+.main .videoBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.main .videoBtn .con1 button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.main .videoBtn button i {
+    margin-right: 10px;
+}
+.main .videoBtn .playBtn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.main .videoBtn .imformBtn {
+    color: white;
+    background-color: rgba(126, 125, 125, 0.7);
+}
+.main .videoBtn .imformBtn:hover {
+    background-color: rgba(126, 125, 125, 0.4);
+}
+.main .videoBtn .con2 {
+    display: flex;
+    align-items: center;
+}
+.main .videoBtn .con2 .replay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color:transparent;
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin-right: 30px;
+}
+.main .videoBtn .con2 .replay:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.main .videoBtn .con2 img {
+    width: 35px;
+    border-radius: 5px;
+}
+
+/* 배경동영상 */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 50;
+}
+.bg-video__content {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 최신콘텐츠 */
+.newContent .contentTitle {
+    margin-bottom: 10px;
+}
+.newContent .contentTitle span {
+    font-size: 20px;
+}
+.newContent .contentVideo {
+    display: flex;
+    justify-content: space-around;
+}
+.newContent .contentVideo .video video{
+    width: 220px;
+    border-radius: 5px;
+}
