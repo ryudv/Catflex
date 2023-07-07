@@ -42,8 +42,16 @@ body {
     border: none;
 }
 .main .mainBox .loginBox .informBox input {
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     padding: 0 20px;
+    /* border-bottom: 2px solid palevioletred; */
+}
+.main .mainBox .loginBox .informBox p {
+    color:palevioletred;
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
 }
 .main .mainBox .loginBox .informBtn input[type=checkbox]{
     accent-color: pink;
@@ -66,6 +74,16 @@ body {
 
 .main .mainBox .loginTxt {
     margin-top: 50px;
+}
+.main .mainBox .loginTxt span {
+    font-weight: bold;
+}
+.main .mainBox .loginTxt a{
+    color: white;
+    text-decoration: none;
+}
+.main .mainBox .loginTxt a:hover {
+    text-decoration: underline;
 }
 .main .mainBox .loginTxt .otherP {
     font-size: 13px;
